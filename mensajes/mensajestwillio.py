@@ -96,7 +96,7 @@ df_llovera = df1.loc[df1['Llovera'] == 1, ['Hora', 'Condición']]
 if df1['Llovera'].any() == 1:
     aqui = 'llovera con una condición de ' + df1.loc[df1['Llovera'] == 1, 'Condición'].iloc[0] + ' y la hora es ' + str(df1.loc[df1['Llovera'] == 1, 'Hora'].iloc[0])
 else:
-    aqui = + str(df1['Temperatura'].max()) + ' grados'
+    aqui = str(df1['Temperatura'].max()) + ' grados'
 
 
 #print(df_rain1)
@@ -106,7 +106,7 @@ else:
 
 
 TWILIO_ACCOUNT_SID='ACb75fcd0719fc71f65d290e9fd43aa5dc'
-TWILIO_AUTH_TOKEN='99199b48fed6259c674bfd47a0c1487a'
+TWILIO_AUTH_TOKEN='18ff120ac55bcc7b5b44ccba708d320c'
 
 
 current_time = datetime.now().time()
